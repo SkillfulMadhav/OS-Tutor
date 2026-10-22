@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: os-tutor-api
+    runtime: docker
+    plan: free
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    envVars:
+      - key: GENERATOR
+        value: groq
+      - key: GROQ_MODEL
+        value: qwen/qwen3.8-27b
+      - key: CORS_ORIGINS
+        value: http://localhost:8080,http://127.0.0.1:8080,https://id-preview--ecec7949-432a-48e3-a269-b79d5f4e7f12.lovable.app,https://ecec7949-432a-48e3-a269-b79d5f4e7f12.lovableproject.com,https://os-tutor.lovable.app
+      - key: GROQ_API_KEY
+        sync: false
