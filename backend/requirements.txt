@@ -1,0 +1,11 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+numpy
+faiss-cpu
+torch
+transformers>=4.51
+accelerate
+bitsandbytes>=0.46.1
+sentence-transformers
+wordninja
+pyspellchecker

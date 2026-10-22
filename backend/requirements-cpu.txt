@@ -1,0 +1,8 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+numpy
+faiss-cpu
+fastembed>=0.4
+requests
+wordninja
+pyspellchecker
